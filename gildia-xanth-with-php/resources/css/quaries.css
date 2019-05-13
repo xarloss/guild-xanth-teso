@@ -1,0 +1,118 @@
+
+/* big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    .hero_text_box {
+    width: 100%;
+    padding:0 2%;}
+    
+    .row { padding: 0 2%;}
+  
+}
+/* small tablets to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    section { padding: 60px 0;}
+    
+.btn  {
+    display: block;
+    padding: 2px 10px;
+    border-radius: 50px;
+}
+    .long-copy {width: 80%; margin-left:10%;}
+    .contact-form {width: 80%;}
+    }
+/* small phones and small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    body {font-size: 14px;}
+    section { padding: 50px 0;}
+    .btn  {
+    border-radius: 200px;
+}
+    .btn-full:link, .btn-full:visited {
+    position: absolute;
+    left: 25%;
+    top:55%;
+    
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    position: absolute;
+    left: 25%;
+    top:60%;
+    width: 223px;
+}
+    .col {width:100%;}
+    
+    .mobile-nav-icon {display: inline-block;}
+    .main-nav {
+        display: none;
+        float:left;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block;
+        margin: 0;
+        padding: 10px; 0
+    }
+    .main-nav li a {
+        display: block;
+        border:0;
+        padding: 5px 0; 
+        font-size: 100%;
+    }
+    
+        .pages {
+        display: none;
+        float:left;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    .pages li {
+        display: block;
+        margin: 0;
+        padding: 10px; 0
+    }
+    .pages li a {
+        display: block;
+        border:0;
+        padding: 5px 0; 
+        font-size: 100%;
+    }
+}
+
+
+.logo {
+    margin-left:0;
+}
+.sticky {
+    font-size: 100%;
+
+}
+.sticky .main-nav li {
+    padding: 2px 0;
+}
+.sticky .logo {
+    height: 50px;
+}
+.sticky .mobile-nav-icon i {color: #555;}
+.sticky .mobile-nav-icon {margin-top:10px;}
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    body {font-size: 13px;}
+        .btn-full:link, .btn-full:visited {
+    position: absolute;
+    left: 25%;
+    top:55%;
+    
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    position: absolute;
+    left: 25%;
+    top:65%;
+    width: 223px;
+}
+}

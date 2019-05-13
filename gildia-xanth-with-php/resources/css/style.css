@@ -1,0 +1,441 @@
+/* ---------------------------------------------- 
+                BASE SETUP  
+   ---------------------------------------------- */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    background-color: #363030;
+    color: #bfb9b9;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering:optimizeLegibility;
+}
+
+/* ---------------------------------------------- 
+               REUSABLE COMPONENTS 
+   ---------------------------------------------- */
+.section {
+    padding: 80px 0;;
+    background-color:#fff;
+    color:#000;
+}
+row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(16, 255, 172);
+    
+}
+/* ---------------------------------------------- 
+                HEADINGS
+   ---------------------------------------------- */
+h1, h2, h3 {
+    font-weight:300;
+    letter-spacing:1px;
+     text-align: center;
+}
+
+h1 {
+   margin: 0;
+    font-size:200%;
+    color: #fff;
+    word-spacing: 3px;
+    
+}
+
+h2 {
+    font-size:180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    word-spacing: 1px;
+}
+
+h2:after {
+    display:block;
+    height: 2px;
+    background-color: #16a085;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/* ---------------------------------------------- 
+               PARAGRAPHS
+   ---------------------------------------------- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align:justify;
+}
+
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    text-align: center;
+    
+}
+/* ---------------------------------------------- 
+               ICONS
+   ---------------------------------------------- */
+.icon-big {
+    font-size: 350%;
+    display:block;
+    color: #16a085;
+    margin-bottom: 10px;
+    text-align:center;
+}
+/* ---------------------------------------------- 
+               BUTTONS
+   ---------------------------------------------- */
+
+.btn:link, .btn:visited  {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 1s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, .btn-full:visited {
+    border: 1px solid #e67e22;
+    position: absolute;
+    left: 15%;
+    top:55%;
+    
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    position: absolute;
+    right: 15%;
+    top:55%;
+    border: 1px solid #16a085;
+}
+
+.btn-full:active, .btn-full:hover {
+    background-color: #e67e22;
+    
+}
+
+.btn-ghost:active, .btn-ghost:hover {
+    background-color: #16a085;
+}
+
+/* ---------------------------------------------- 
+               HEADER
+   ---------------------------------------------- */
+
+ header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(img/ss.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+.hero_text_box {
+    position:absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+  
+}
+
+.logo {
+    float: left;
+    height: 150px;
+    width:auto;
+    margin-left: 12%;
+}
+
+/* Main navigation */
+.main-nav {
+    float:right;
+    list-style:none;
+}
+
+.main-nav li {
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.main-nav li a {
+     text-decoration:none;
+     color: #fff;
+     text-transform:uppercase;
+     font-size: 90%;
+     padding: 8px 0px;
+}
+.main-nav li a:link, .main-nav li a:visited  {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+  
+}
+.main-nav li a:hover, .main-nav li a:active  {
+    color: #b7b7b7;
+    border-bottom: 2px solid #e67e22;
+    
+}
+/* STRONA AKTUALNOSCI */
+.pages {
+    display: flex;
+    align-items: center;
+    list-style:none;
+
+}
+.pages li {
+    display: inline-block;
+    
+}
+
+/* Sticky navigation */
+
+.sticky {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 20px #ebebeb;
+    font-size: 80%;
+    z-index: 9999;
+}
+.sticky .main-nav {
+    padding-top: 0px;
+}
+
+.sticky .main-nav li {
+    margin-top:10px;
+    padding: 7px 0;
+}
+
+.sticky .main-nav li a {
+     color: #555;
+ 
+}
+.sticky .main-nav li a:link, .sticky .main-nav li a:visited  {
+    transition: border-bottom 0.2s;
+}
+.sticky .logo {
+    height: 45px;
+}
+
+/* ---------------------------------------------- 
+                MOBILE NAVIGATION
+   ---------------------------------------------- */
+.mobile-nav-icon {
+    float: right;
+    margin-top:20px;
+    margin-right:15px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* ---------------------------------------------- 
+                O NAS AND JAK DOLACZYC I DISCORD
+   ---------------------------------------------- */
+.section o-nas .long-copy {
+    margin-bottom: 30px;
+}
+
+.join {
+    padding-top: 3%;
+    background-color: #ebebeb;
+    padding-top: 60px;
+    
+
+}
+
+.discord {
+    font-weight: 300;
+    font-size: 115%;
+    background-image: linear-gradient(#16a085, rgba(0, 0, 0, 0.79)), url(img/discord%203.png);
+    background-attachment: fixed;
+    background-size: contain;
+    height: 50vh;
+    background-position: bottom;
+    color: #fff;
+}
+
+
+
+/* ---------------------------------------------- 
+                SCREENSHOTS
+   ---------------------------------------------- */
+.section-screens {
+    padding: 0;
+}
+.screen-showcase {
+    list-style:none;
+    width: 100%;
+}
+
+.screen-showcase li {
+    display: block;
+    float:left;
+    width: 25%;
+}
+
+.photo {
+    width:100%;
+    margin:0
+    overflow: hidden;
+
+}
+
+.photo img {
+    opacity:0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.photo img:click {
+    transform:scale(2.05)
+}
+
+/* ---------------------------------------------- 
+                 CONTACT FORM
+   ---------------------------------------------- */
+.form {
+    background-color: #dedede;
+}
+.contact-form {
+    width: 60%;
+    margin:0 auto;
+    text-align: center;
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea {
+    height: 100px;
+}
+
+input[type=submit]  {
+    background-color: rgba(113, 113, 113, 0.92);
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: rgb(255, 255, 255);
+    transition: background-color 1s, border 0.2s, color 0.2s;
+}
+
+input[type=submit]:active, input[type=submit]:hover {
+    background-color: #16a085;
+}
+
+*:focus {outline:none;}
+
+
+/* ---------------------------------------------- 
+                 FOOTER
+   ---------------------------------------------- */
+footer {
+    background-color: #404040;
+    height: 100px;
+    font-size: 80%;
+}
+
+
+.footer-nav a:link, .footer-nav a:visited {
+    color: #909090;
+    transition: color 0.3s;
+    
+}
+
+
+.footer-nav a:hover, .footer-nav a:active {
+    color: #c9c9c9;
+    
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.copyright {
+    margin: 10px 20px;
+    left: 40%;
+    position: absolute;
+}
+
+/* ---------------------------------------------- 
+                 ANIMATIONS
+   ---------------------------------------------- */
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated {
+    opacity: 1; 
+}
+
+.js--wp-2 {
+    opacity: 0;
+}
+
+.js--wp-2.animated {
+    opacity: 1;
+}
+
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-3.typed {
+    opacity: 1;
+}
+.typed {
+    position:absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+  
+        
+    }
+}
